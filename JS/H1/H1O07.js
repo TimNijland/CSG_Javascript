@@ -5,14 +5,15 @@ function setup() {
   noLoop();
   colorMode(RGB, 255, 255, 255, 1);
   fill(178, 34, 34,.5);
+  angleMode(DEGREES);
 }
 
 function draw() {
   noStroke();
   translate(125,125);
   rect(0,0,200,200);
-  
-  rotate(0);
-  
+  push();
+  rotate(45);
   rect(0,0,200,200);
+  pop();
 }
